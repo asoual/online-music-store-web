@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style= "background-color:#FFFAF0">  
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+
+            <a class="navbar-brand" href="#" id="Music"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+                <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                </svg>My Online Music Store</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Catalog.html">See Catalog</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </nav> 
+
+        <style>
+            .img-container img{
+                margin: 10px;
+                margin-left: 150px;
+                width: 1100px;
+                height: 400px;
+            }
+
+        </style>
+
+        <div class="img-container">
+            
+            <img src="intrument.jpeg">
+            <br>
+            <br>
+        </div>
+        <div class = "par">
+        <p> Are You looking for a music instrument? And too lazy to go to the store? This website will make your life easier ! </p>
+        </div>
+        <style>
+            .par{
+                text-align: center;
+                font-size: 20pt;
+                font-family: "bradley hand";
+                font-weight: bold;
+            }
+            .blabla {
+                margin: auto;
+                margin-left: 600px;
+                width: 50%;
+                padding: 60px;
+            }
+        </style>
+        <div class="blabla">
+            <a style="text-align: center;" id="blabla" href="Login.html" class="btn btn-secondary" role="button" data-bs-toggle="button"> Login </a>
+            <br>
+            <button type="button" class="btn btn-link"><a href="AddUser.html">You don't have an account?</a></button>
+
+        </div>
+        <style>
+            footer {
+                flex-shrink: 0;
+                border-top: 1px dashed #000;
+                width: 100%;
+                background: #fff2e6;
+                color: #333;
+            }
+            .contenu-footer {
+                width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                font-size: 20px;
+                padding: 50px 0 100px;
+            }
+
+            .bloc {
+                width: 25%;
+                margin: 0 30px;
+            }
+
+            /* contact */
+            .footer-contact h3,
+            .footer-services h3,
+            .footer-horaires h3,
+            .footer-medias h3 {
+                font-size: 25px;
+                padding-bottom: 20px;
+            }
+
+            .footer-contact p {
+                padding: 5px 0;
+            }
+
+            /* Services */
+
+            .liste-services,
+            .liste-horaires,
+            .liste-media {
+                list-style-type: none;
+            }
+            .liste-services li {
+                padding: 2px 0;
+            }
+            .liste-services a {
+                text-decoration: none;
+                color: #333;
+            }
+            .liste-services a:hover {
+                color: rgb(3,3,3);
+            }
+
+            /* Medias */
+
+            .liste-media {
+                position: relative;
+                right: 10px;
+            }
+            .liste-media img {
+                width: 40px;
+                margin: 10px 10px;
+            }
+            .liste-media a {
+                text-decoration: none;
+                color: #333;
+                display: flex;
+                align-items: center;
+                font-size: 25px;
+            }
+
+            /* Media queries */
+
+            @media screen and (max-width: 1300px) {
+
+                .contenu-footer {
+                    width: 700px;
+                    flex-wrap: wrap;
+                }
+                .bloc {
+                    width: 40%;
+                    margin: 0 0;
+                }
+                .bloc:nth-child(1),
+                .bloc:nth-child(2) {
+                    margin-bottom: 50px;
+                }
+
+            }
+
+            @media screen and (max-width: 800px) {
+                .contenu-footer {
+                    width: 320px;
+                }
+                .bloc {
+                    width: 300px;
+                    margin: 30px 30px;
+                }
+                .bloc:nth-child(1),
+                .bloc:nth-child(2) {
+                    margin-bottom: 30px;
+                }
+                .bloc:nth-child(1) {
+                    margin-top: 0;
+                }
+            }
+        </style>
+        <footer>
+
+            <div class="contenu-footer">
+
+                <div class="bloc footer-services">
+                    <h3>Produits</h3>
+                    <ul class="liste-services">
+                        <li><a href="#">Meilleurs ventes</a></li>
+                        <li><a href="#">Promotions</a></li>
+                        <li><a href="#">Nouveauté</a></li>
+                    </ul>
+                </div>
+
+                <div class="bloc footer-contact">
+                    <h3>Restons en contact</h3>
+                    <p>(212)6.43.08.59.98</p>
+                    <p>walednajdsoulhiamouloue@aui.ma</p>
+                    <p>Ifrane</p>
+                </div>
+
+                <div class="bloc footer-horaires">
+                    <h3>Les horaires</h3>
+                    <ul class="liste-horaires">
+                        <li>✔️ Lun 10h-19h</li>
+                        <li>✔️ Mar 10h-19h</li>
+                        <li>✔️ Mer 10h-19h</li>
+                        <li>✔️ Jeu 10h-19h</li>
+                        <li>✔️ Ven 10h-19h</li>
+                        <li>❌ Sam fermé</li>
+                        <li>❌ Dim fermé</li>
+                    </ul>
+                </div>
+
+                <div class="bloc footer-medias">
+                    <h3>Nos réseaux</h3>
+                    <ul class="liste-media">
+                        <li><a href="www.facebook.com">
+                                Facebook/monsite</a></li>
+                        <li><a href="www.instagram.com">
+                                Instagram/stuff</a></li>
+                        <li><a href="www.twitter.com">
+                                Twitter/lorem</a></li>
+                        <li><a href="www.youtube.com">
+                                Youtube/channel</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

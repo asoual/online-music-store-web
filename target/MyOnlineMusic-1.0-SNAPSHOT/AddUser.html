@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script><link rel="stylesheet" type="text/css" href="project.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+
+    <body style= "background-color:#FFFAF0" >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+
+            <a class="navbar-brand" href="#" id="Music"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+                <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                </svg>My Online Music Store</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Catalog.html">See Catalog</a>
+                    </li>
+                   
+                        
+                       
+                    
+
+                </ul>
+                
+            </div>
+        </nav> 
+        <div class="t">
+            <center>
+                <br>
+                <h1><FONT color="Black" size="36pt"  > Welcome, start your registration </h1></FONT>
+            </center>
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="solfe.jpeg" alt="Shop">
+                    <br>
+                    <br>
+                    <a href="index.html">Back to the main page</a>
+                </div>
+                <div class="col-sm">
+                    <form name="Add" action="adduser" id="addform" method="post" >
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">ID</label>
+                            <input type="number" class="form-control" id="UserID" placeholder="ID" name="UserID" required>
+                            <span id="useridconfirm"> </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1"> First Name</label>
+                            <input type="text" class="form-control" id="UserFName" placeholder="First Name" name="UserFName" required >
+                            <span id="userfnameconfirm"> </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Last Name</label>
+                            <input type="text" class="form-control" id="UserLName" placeholder="Last Name" name="UserLName" required>
+                            <span id="userlnameconfirm"> </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Address</label>
+                            <input type="text" class="form-control" id="UserAddress" placeholder="Address" name="UserAddress" required>
+                            <span id="useraddressconfirm"> </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Email</label>
+                            <input type="email" class="form-control" id="UserEmail" placeholder="Enter email" name="UserEmail" required>
+                            <span id="useremailconfirm"> </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Phone Number</label>
+                            <input type="text" class="form-control" id="UserPhone" placeholder="+212" name="UserPhone" required>
+                            <span id="userphoneconfirm"> </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Enter password" name="Password" required>
+                            <span id="pwdconfirm"> </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Confirm password</label>
+                            <input type="password" class="form-control" id="Passwordconfirm" placeholder="re-enter password" name="Password" required>
+                            <span id="pwdconfirmconfirm"> </span>
+                        </div>
+
+                        <button class="btn btn-primary" type="button" onclick="veriffunct()">Submit</button>              
+                    </form>
+
+                    <br/> <br/>
+
+                </div>
+                <div class="col-sm">
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+    <script>
+        function veriffunct() {
+            var form = document.getElementById('addform');
+            var pwd = document.getElementById("Password").value;
+            var pwdconfirm = document.getElementById("Passwordconfirm").value;
+            for (var i = 0; i < form.elements.length; i++) {
+                if (form.elements[i].value === '' && form.elements[i].hasAttribute('required')) {
+                    alert('There are some required fields!');
+                    return false;
+                }
+            }
+
+            if (pwd != pwdconfirm) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            form.submit();
+
+            /*  userid = document.getElementById("UserID").value
+             userfname = document.getElementByName("UserFName").value
+             userlname = document.getElementsByName("UserLName").value
+             useraddress = document.getElementsByName("UserAddress").value
+             useremail = document.getElementsByName("UserEmail").value
+             userphone = document.getElementsByName("UserPhone").value
+             pwd = document.getElementsByName("Password")[0].value;
+             pwdconfirm = document.getElementsByName("Passwordcomfirm")[1].value;
+             
+             if (userid == "") {
+             document.getElementById("useridconfirm").innerHTML = "<p class='text-danger'> *Mandatory </p>"
+             } else {
+             document.getElementById("useridconfirm").innerHTML = ""
+             }
+             if (userfname == "") {
+             document.getElementById("userfnameconfirm").innerHTML = "<p class='text-danger'> *Mandatory </p>"
+             } else {
+             document.getElementById("userfnameconfirm").innerHTML = ""
+             }
+             if (userlname == "") {
+             document.getElementById("userlnameconfirm").innerHTML = "<p class='text-danger'> *Mandatory </p>"
+             } else {
+             document.getElementById("userlnameconfirm").innerHTML = ""
+             }
+             if (useraddress == "") {
+             document.getElementById("useraddressconfirm").innerHTML = "<p class='text-danger'> *Mandatory </p>"
+             } else {
+             document.getElementById("useraddressconfirm").innerHTML = ""
+             }
+             if (useremail == "") {
+             document.getElementById("useremailconfirm").innerHTML = "<p class='text-danger'> *Mandatory </p>"
+             } else {
+             document.getElementById("useremailconfirm").innerHTML = ""
+             }
+             if (userphone == "") {
+             document.getElementById("userphoneconfirm").innerHTML = "<p class='text-danger'> *Mandatory </p>"
+             } else {
+             document.getElementById("userphoneconfirm").innerHTML = ""
+             }
+             if (pwd == "") {
+             document.getElementById("userphoneconfirm").innerHTML = "<p class='text-danger'> *Mandatory </p>"
+             } else {
+             document.getElementById("userphoneconfirm").innerHTML = ""
+             }
+             if (pwdconfirm == "") {
+             document.getElementsByName("pwdconfirm").innerHTML = "<p class='text-danger'> *Mandatory </p>"
+             } else {
+             document.getElementByName("pwdconfirmconfirm").innerHTML = ""
+             }
+             
+             if (pwd == pwdconfirm) {
+             
+             document.getElementById("addform").submit();
+             } else {
+             Swal.fire({
+             title: 'Error!',
+             text: 'Do you want to continue',
+             icon: 'error',
+             confirmButtonText: 'Cool'
+             })
+             }*/
+
+        }
+    </script>
+</html>
